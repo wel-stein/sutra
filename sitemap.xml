@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://dabeixin.org/</loc>
     <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/"/>
     <image:image><image:loc>https://dabeixin.org/01.webp</image:loc></image:image>
     <image:image><image:loc>https://dabeixin.org/02.webp</image:loc></image:image>
     <image:image><image:loc>https://dabeixin.org/03.webp</image:loc></image:image>
@@ -88,5 +91,11 @@
     <image:image><image:loc>https://dabeixin.org/82.webp</image:loc></image:image>
     <image:image><image:loc>https://dabeixin.org/83.webp</image:loc></image:image>
     <image:image><image:loc>https://dabeixin.org/84.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/"/>
   </url>
 </urlset>
