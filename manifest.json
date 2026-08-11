@@ -1,0 +1,14 @@
+{
+  "name": "大悲咒 · 八十四相",
+  "short_name": "大悲咒",
+  "description": "大悲咒八十四句全文与观世音菩萨八十四化相图",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1d1410",
+  "theme_color": "#1d1410",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

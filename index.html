@@ -7,24 +7,28 @@
 <meta name="description" content="大悲咒（千手千眼观世音菩萨广大圆满无碍大悲心陀罗尼）八十四句全文，逐句配观世音菩萨八十四化相图，可左右滑动逐句瞻礼、随文观想。附大悲咒缘起与持诵功德简介，仅作弘法流通。">
 <meta name="keywords" content="大悲咒,大悲咒全文,大悲咒八十四句,八十四相,观世音菩萨,千手千眼,大悲心陀罗尼,观音菩萨,佛教咒语">
 <link rel="canonical" href="https://dabeixin.org/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/">
+<link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/">
+<link rel="alternate" hreflang="x-default" href="https://dabeixin.org/">
 <meta name="theme-color" content="#1d1410">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.ico" sizes="48x48">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" as="image" href="01.webp">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="image" href="/01.webp">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="大悲心 · dabeixin.org">
 <meta property="og:title" content="大悲咒 · 八十四相｜大悲心陀罗尼全文与化相图">
 <meta property="og:description" content="大悲咒八十四句全文，逐句配观世音菩萨八十四化相图，可滑动逐句瞻礼、随文观想。">
 <meta property="og:url" content="https://dabeixin.org/">
-<meta property="og:image" content="https://dabeixin.org/01.jpg">
-<meta property="og:image:width" content="600">
-<meta property="og:image:height" content="896">
+<meta property="og:image" content="https://dabeixin.org/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="大悲咒 · 八十四相｜大悲心陀罗尼全文与化相图">
 <meta name="twitter:description" content="大悲咒八十四句全文，逐句配观世音菩萨八十四化相图，可滑动逐句瞻礼、随文观想。">
-<meta name="twitter:image" content="https://dabeixin.org/01.jpg">
+<meta name="twitter:image" content="https://dabeixin.org/og-image.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -78,11 +82,25 @@
 
   /* ---------- 页眉 ---------- */
   header {
+    position: relative;
     text-align: center;
     padding: 48px 16px 28px;
     background:
       radial-gradient(ellipse 70% 100% at 50% 0%, #34261c 0%, transparent 70%);
   }
+  .lang-switch {
+    position: absolute;
+    top: 16px; right: 16px;
+    color: var(--gold-dim);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 13px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: color .2s, border-color .2s;
+  }
+  .lang-switch:hover { color: var(--gold); border-color: var(--gold-dim); }
   header .lotus { font-size: 30px; color: var(--gold); letter-spacing: 8px; }
   header h1 {
     font-size: clamp(30px, 6vw, 44px);
@@ -216,6 +234,12 @@
     letter-spacing: .14em;
     font-weight: 600;
   }
+  .caption .pyline {
+    color: var(--text-dim);
+    font-size: clamp(12.5px, 2.6vw, 14.5px);
+    letter-spacing: .05em;
+    margin-top: 4px;
+  }
 
   /* ---------- 经文全览 ---------- */
   .scripture-note {
@@ -256,6 +280,14 @@
     min-width: 2.2em;
     flex: none;
   }
+  .verses .v { display: flex; flex-direction: column; min-width: 0; }
+  .verses .py {
+    color: var(--text-dim);
+    font-size: 11.5px;
+    letter-spacing: .02em;
+    line-height: 1.5;
+    margin-top: 2px;
+  }
   footer {
     text-align: center;
     color: var(--text-dim);
@@ -282,6 +314,7 @@
 <body>
 
 <header>
+  <a class="lang-switch" href="/tc/">繁體</a>
   <div class="lotus">☸</div>
   <h1>大悲咒 · 八十四相</h1>
   <div class="sub">千手千眼观世音菩萨广大圆满无碍大悲心陀罗尼</div>
@@ -315,6 +348,7 @@
       <div class="caption">
         <div class="num" id="capNum"></div>
         <div class="verse" id="capVerse"></div>
+        <div class="pyline" id="capPy"></div>
       </div>
     </div>
   </section>
@@ -324,90 +358,90 @@
     <h2>大悲咒 · 八十四句经文</h2>
     <div class="scripture-note">点击任一句，即可跳转至对应图相</div>
     <div class="verses" id="verseList">
-      <button type="button"><span class="n">01</span><span class="t">南无·喝啰怛那·哆啰夜耶</span></button>
-      <button type="button"><span class="n">02</span><span class="t">南无·阿唎耶</span></button>
-      <button type="button"><span class="n">03</span><span class="t">婆卢羯帝·烁钵啰耶</span></button>
-      <button type="button"><span class="n">04</span><span class="t">菩提萨埵婆耶</span></button>
-      <button type="button"><span class="n">05</span><span class="t">摩诃萨埵婆耶</span></button>
-      <button type="button"><span class="n">06</span><span class="t">摩诃迦卢尼迦耶</span></button>
-      <button type="button"><span class="n">07</span><span class="t">唵</span></button>
-      <button type="button"><span class="n">08</span><span class="t">萨皤啰罚曳</span></button>
-      <button type="button"><span class="n">09</span><span class="t">数怛那怛写</span></button>
-      <button type="button"><span class="n">10</span><span class="t">南无悉吉栗埵·伊蒙阿唎耶</span></button>
-      <button type="button"><span class="n">11</span><span class="t">婆卢吉帝·室佛啰楞驮婆</span></button>
-      <button type="button"><span class="n">12</span><span class="t">南无·那啰谨墀</span></button>
-      <button type="button"><span class="n">13</span><span class="t">醯利摩诃皤哆沙咩</span></button>
-      <button type="button"><span class="n">14</span><span class="t">萨婆阿他·豆输朋</span></button>
-      <button type="button"><span class="n">15</span><span class="t">阿逝孕</span></button>
-      <button type="button"><span class="n">16</span><span class="t">萨婆萨哆·那摩婆萨哆·那摩婆伽</span></button>
-      <button type="button"><span class="n">17</span><span class="t">摩罚特豆</span></button>
-      <button type="button"><span class="n">18</span><span class="t">怛姪他</span></button>
-      <button type="button"><span class="n">19</span><span class="t">唵·阿婆卢醯</span></button>
-      <button type="button"><span class="n">20</span><span class="t">卢迦帝</span></button>
-      <button type="button"><span class="n">21</span><span class="t">迦罗帝</span></button>
-      <button type="button"><span class="n">22</span><span class="t">夷醯唎</span></button>
-      <button type="button"><span class="n">23</span><span class="t">摩诃菩提萨埵</span></button>
-      <button type="button"><span class="n">24</span><span class="t">萨婆萨婆</span></button>
-      <button type="button"><span class="n">25</span><span class="t">摩啰摩啰</span></button>
-      <button type="button"><span class="n">26</span><span class="t">摩醯摩醯·唎驮孕</span></button>
-      <button type="button"><span class="n">27</span><span class="t">俱卢俱卢·羯蒙</span></button>
-      <button type="button"><span class="n">28</span><span class="t">度卢度卢·罚阇耶帝</span></button>
-      <button type="button"><span class="n">29</span><span class="t">摩诃罚阇耶帝</span></button>
-      <button type="button"><span class="n">30</span><span class="t">陀啰陀啰</span></button>
-      <button type="button"><span class="n">31</span><span class="t">地唎尼</span></button>
-      <button type="button"><span class="n">32</span><span class="t">室佛啰耶</span></button>
-      <button type="button"><span class="n">33</span><span class="t">遮啰遮啰</span></button>
-      <button type="button"><span class="n">34</span><span class="t">摩么罚摩啰</span></button>
-      <button type="button"><span class="n">35</span><span class="t">穆帝隶</span></button>
-      <button type="button"><span class="n">36</span><span class="t">伊醯伊醯</span></button>
-      <button type="button"><span class="n">37</span><span class="t">室那室那</span></button>
-      <button type="button"><span class="n">38</span><span class="t">阿啰嘇·佛啰舍利</span></button>
-      <button type="button"><span class="n">39</span><span class="t">罚沙罚嘇</span></button>
-      <button type="button"><span class="n">40</span><span class="t">佛啰舍耶</span></button>
-      <button type="button"><span class="n">41</span><span class="t">呼嚧呼嚧摩啰</span></button>
-      <button type="button"><span class="n">42</span><span class="t">呼嚧呼嚧醯利</span></button>
-      <button type="button"><span class="n">43</span><span class="t">娑啰娑啰</span></button>
-      <button type="button"><span class="n">44</span><span class="t">悉唎悉唎</span></button>
-      <button type="button"><span class="n">45</span><span class="t">苏嚧苏嚧</span></button>
-      <button type="button"><span class="n">46</span><span class="t">菩提夜·菩提夜</span></button>
-      <button type="button"><span class="n">47</span><span class="t">菩驮夜·菩驮夜</span></button>
-      <button type="button"><span class="n">48</span><span class="t">弥帝唎夜</span></button>
-      <button type="button"><span class="n">49</span><span class="t">那啰谨墀</span></button>
-      <button type="button"><span class="n">50</span><span class="t">地利瑟尼那</span></button>
-      <button type="button"><span class="n">51</span><span class="t">婆夜摩那</span></button>
-      <button type="button"><span class="n">52</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">53</span><span class="t">悉陀夜</span></button>
-      <button type="button"><span class="n">54</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">55</span><span class="t">摩诃悉陀夜</span></button>
-      <button type="button"><span class="n">56</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">57</span><span class="t">悉陀喻艺</span></button>
-      <button type="button"><span class="n">58</span><span class="t">室皤啰耶</span></button>
-      <button type="button"><span class="n">59</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">60</span><span class="t">那啰谨墀</span></button>
-      <button type="button"><span class="n">61</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">62</span><span class="t">摩啰那啰</span></button>
-      <button type="button"><span class="n">63</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">64</span><span class="t">悉啰僧·阿穆佉耶</span></button>
-      <button type="button"><span class="n">65</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">66</span><span class="t">娑婆摩诃·阿悉陀夜</span></button>
-      <button type="button"><span class="n">67</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">68</span><span class="t">者吉啰·阿悉陀夜</span></button>
-      <button type="button"><span class="n">69</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">70</span><span class="t">波陀摩·羯悉陀夜</span></button>
-      <button type="button"><span class="n">71</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">72</span><span class="t">那啰谨墀·皤伽啰耶</span></button>
-      <button type="button"><span class="n">73</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">74</span><span class="t">摩婆利·胜羯啰夜</span></button>
-      <button type="button"><span class="n">75</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">76</span><span class="t">南无喝啰怛那·哆啰夜耶</span></button>
-      <button type="button"><span class="n">77</span><span class="t">南无阿唎耶</span></button>
-      <button type="button"><span class="n">78</span><span class="t">婆嚧吉帝</span></button>
-      <button type="button"><span class="n">79</span><span class="t">烁皤啰夜</span></button>
-      <button type="button"><span class="n">80</span><span class="t">娑婆诃</span></button>
-      <button type="button"><span class="n">81</span><span class="t">唵·悉殿都</span></button>
-      <button type="button"><span class="n">82</span><span class="t">漫多啰</span></button>
-      <button type="button"><span class="n">83</span><span class="t">跋陀耶</span></button>
-      <button type="button"><span class="n">84</span><span class="t">娑婆诃</span></button>
+      <button type="button"><span class="n">01</span><span class="v"><span class="t">南无·喝啰怛那·哆啰夜耶</span><span class="py">ná mó · hē là dá nā · duō là yè yē</span></span></button>
+      <button type="button"><span class="n">02</span><span class="v"><span class="t">南无·阿唎耶</span><span class="py">ná mó · ā lì yē</span></span></button>
+      <button type="button"><span class="n">03</span><span class="v"><span class="t">婆卢羯帝·烁钵啰耶</span><span class="py">pó lú jié dì · shuò bō là yē</span></span></button>
+      <button type="button"><span class="n">04</span><span class="v"><span class="t">菩提萨埵婆耶</span><span class="py">pú tí sà duǒ pó yē</span></span></button>
+      <button type="button"><span class="n">05</span><span class="v"><span class="t">摩诃萨埵婆耶</span><span class="py">mó hē sà duǒ pó yē</span></span></button>
+      <button type="button"><span class="n">06</span><span class="v"><span class="t">摩诃迦卢尼迦耶</span><span class="py">mó hē jiā lú ní jiā yē</span></span></button>
+      <button type="button"><span class="n">07</span><span class="v"><span class="t">唵</span><span class="py">ǎn</span></span></button>
+      <button type="button"><span class="n">08</span><span class="v"><span class="t">萨皤啰罚曳</span><span class="py">sà pó là fá yì</span></span></button>
+      <button type="button"><span class="n">09</span><span class="v"><span class="t">数怛那怛写</span><span class="py">shù dá nā dá xiě</span></span></button>
+      <button type="button"><span class="n">10</span><span class="v"><span class="t">南无悉吉栗埵·伊蒙阿唎耶</span><span class="py">ná mó xī jí lì duǒ · yī méng ā lì yē</span></span></button>
+      <button type="button"><span class="n">11</span><span class="v"><span class="t">婆卢吉帝·室佛啰楞驮婆</span><span class="py">pó lú jí dì · shì fó là léng tuó pó</span></span></button>
+      <button type="button"><span class="n">12</span><span class="v"><span class="t">南无·那啰谨墀</span><span class="py">ná mó · nā là jǐn chí</span></span></button>
+      <button type="button"><span class="n">13</span><span class="v"><span class="t">醯利摩诃皤哆沙咩</span><span class="py">xī lì mó hē pó duō shā miē</span></span></button>
+      <button type="button"><span class="n">14</span><span class="v"><span class="t">萨婆阿他·豆输朋</span><span class="py">sà pó ā tā · dòu shū péng</span></span></button>
+      <button type="button"><span class="n">15</span><span class="v"><span class="t">阿逝孕</span><span class="py">ā shì yùn</span></span></button>
+      <button type="button"><span class="n">16</span><span class="v"><span class="t">萨婆萨哆·那摩婆萨哆·那摩婆伽</span><span class="py">sà pó sà duō · ná mó pó sà duō · ná mó pó qié</span></span></button>
+      <button type="button"><span class="n">17</span><span class="v"><span class="t">摩罚特豆</span><span class="py">mó fá tè dòu</span></span></button>
+      <button type="button"><span class="n">18</span><span class="v"><span class="t">怛姪他</span><span class="py">dá zhí tuō</span></span></button>
+      <button type="button"><span class="n">19</span><span class="v"><span class="t">唵·阿婆卢醯</span><span class="py">ǎn · ā pó lú xī</span></span></button>
+      <button type="button"><span class="n">20</span><span class="v"><span class="t">卢迦帝</span><span class="py">lú jiā dì</span></span></button>
+      <button type="button"><span class="n">21</span><span class="v"><span class="t">迦罗帝</span><span class="py">jiā luó dì</span></span></button>
+      <button type="button"><span class="n">22</span><span class="v"><span class="t">夷醯唎</span><span class="py">yí xī lì</span></span></button>
+      <button type="button"><span class="n">23</span><span class="v"><span class="t">摩诃菩提萨埵</span><span class="py">mó hē pú tí sà duǒ</span></span></button>
+      <button type="button"><span class="n">24</span><span class="v"><span class="t">萨婆萨婆</span><span class="py">sà pó sà pó</span></span></button>
+      <button type="button"><span class="n">25</span><span class="v"><span class="t">摩啰摩啰</span><span class="py">mó là mó là</span></span></button>
+      <button type="button"><span class="n">26</span><span class="v"><span class="t">摩醯摩醯·唎驮孕</span><span class="py">mó xī mó xī · lì tuó yùn</span></span></button>
+      <button type="button"><span class="n">27</span><span class="v"><span class="t">俱卢俱卢·羯蒙</span><span class="py">jù lú jù lú · jié méng</span></span></button>
+      <button type="button"><span class="n">28</span><span class="v"><span class="t">度卢度卢·罚阇耶帝</span><span class="py">dù lú dù lú · fá shé yē dì</span></span></button>
+      <button type="button"><span class="n">29</span><span class="v"><span class="t">摩诃罚阇耶帝</span><span class="py">mó hē fá shé yē dì</span></span></button>
+      <button type="button"><span class="n">30</span><span class="v"><span class="t">陀啰陀啰</span><span class="py">tuó là tuó là</span></span></button>
+      <button type="button"><span class="n">31</span><span class="v"><span class="t">地唎尼</span><span class="py">dì lì ní</span></span></button>
+      <button type="button"><span class="n">32</span><span class="v"><span class="t">室佛啰耶</span><span class="py">shì fó là yē</span></span></button>
+      <button type="button"><span class="n">33</span><span class="v"><span class="t">遮啰遮啰</span><span class="py">zhē là zhē là</span></span></button>
+      <button type="button"><span class="n">34</span><span class="v"><span class="t">摩么罚摩啰</span><span class="py">mó mó fá mó là</span></span></button>
+      <button type="button"><span class="n">35</span><span class="v"><span class="t">穆帝隶</span><span class="py">mù dì lì</span></span></button>
+      <button type="button"><span class="n">36</span><span class="v"><span class="t">伊醯伊醯</span><span class="py">yī xī yī xī</span></span></button>
+      <button type="button"><span class="n">37</span><span class="v"><span class="t">室那室那</span><span class="py">shì nā shì nā</span></span></button>
+      <button type="button"><span class="n">38</span><span class="v"><span class="t">阿啰嘇·佛啰舍利</span><span class="py">ā là shēn · fó là shě lì</span></span></button>
+      <button type="button"><span class="n">39</span><span class="v"><span class="t">罚沙罚嘇</span><span class="py">fá shā fá shēn</span></span></button>
+      <button type="button"><span class="n">40</span><span class="v"><span class="t">佛啰舍耶</span><span class="py">fó là shě yē</span></span></button>
+      <button type="button"><span class="n">41</span><span class="v"><span class="t">呼嚧呼嚧摩啰</span><span class="py">hū lú hū lú mó là</span></span></button>
+      <button type="button"><span class="n">42</span><span class="v"><span class="t">呼嚧呼嚧醯利</span><span class="py">hū lú hū lú xī lì</span></span></button>
+      <button type="button"><span class="n">43</span><span class="v"><span class="t">娑啰娑啰</span><span class="py">suō là suō là</span></span></button>
+      <button type="button"><span class="n">44</span><span class="v"><span class="t">悉唎悉唎</span><span class="py">xī lì xī lì</span></span></button>
+      <button type="button"><span class="n">45</span><span class="v"><span class="t">苏嚧苏嚧</span><span class="py">sū lú sū lú</span></span></button>
+      <button type="button"><span class="n">46</span><span class="v"><span class="t">菩提夜·菩提夜</span><span class="py">pú tí yè · pú tí yè</span></span></button>
+      <button type="button"><span class="n">47</span><span class="v"><span class="t">菩驮夜·菩驮夜</span><span class="py">pú tuó yè · pú tuó yè</span></span></button>
+      <button type="button"><span class="n">48</span><span class="v"><span class="t">弥帝唎夜</span><span class="py">mí dì lì yè</span></span></button>
+      <button type="button"><span class="n">49</span><span class="v"><span class="t">那啰谨墀</span><span class="py">nā là jǐn chí</span></span></button>
+      <button type="button"><span class="n">50</span><span class="v"><span class="t">地利瑟尼那</span><span class="py">dì lì sè ní nā</span></span></button>
+      <button type="button"><span class="n">51</span><span class="v"><span class="t">婆夜摩那</span><span class="py">pó yè mó nā</span></span></button>
+      <button type="button"><span class="n">52</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">53</span><span class="v"><span class="t">悉陀夜</span><span class="py">xī tuó yè</span></span></button>
+      <button type="button"><span class="n">54</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">55</span><span class="v"><span class="t">摩诃悉陀夜</span><span class="py">mó hē xī tuó yè</span></span></button>
+      <button type="button"><span class="n">56</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">57</span><span class="v"><span class="t">悉陀喻艺</span><span class="py">xī tuó yù yì</span></span></button>
+      <button type="button"><span class="n">58</span><span class="v"><span class="t">室皤啰耶</span><span class="py">shì pó là yē</span></span></button>
+      <button type="button"><span class="n">59</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">60</span><span class="v"><span class="t">那啰谨墀</span><span class="py">nā là jǐn chí</span></span></button>
+      <button type="button"><span class="n">61</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">62</span><span class="v"><span class="t">摩啰那啰</span><span class="py">mó là nā là</span></span></button>
+      <button type="button"><span class="n">63</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">64</span><span class="v"><span class="t">悉啰僧·阿穆佉耶</span><span class="py">xī là sēng · ā mù qié yē</span></span></button>
+      <button type="button"><span class="n">65</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">66</span><span class="v"><span class="t">娑婆摩诃·阿悉陀夜</span><span class="py">suō pó mó hē · ā xī tuó yè</span></span></button>
+      <button type="button"><span class="n">67</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">68</span><span class="v"><span class="t">者吉啰·阿悉陀夜</span><span class="py">zhě jí là · ā xī tuó yè</span></span></button>
+      <button type="button"><span class="n">69</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">70</span><span class="v"><span class="t">波陀摩·羯悉陀夜</span><span class="py">bō tuó mó · jié xī tuó yè</span></span></button>
+      <button type="button"><span class="n">71</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">72</span><span class="v"><span class="t">那啰谨墀·皤伽啰耶</span><span class="py">nā là jǐn chí · pó qié là yē</span></span></button>
+      <button type="button"><span class="n">73</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">74</span><span class="v"><span class="t">摩婆利·胜羯啰夜</span><span class="py">mó pó lì · shèng jié là yè</span></span></button>
+      <button type="button"><span class="n">75</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">76</span><span class="v"><span class="t">南无喝啰怛那·哆啰夜耶</span><span class="py">ná mó hē là dá nā · duō là yè yē</span></span></button>
+      <button type="button"><span class="n">77</span><span class="v"><span class="t">南无阿唎耶</span><span class="py">ná mó ā lì yē</span></span></button>
+      <button type="button"><span class="n">78</span><span class="v"><span class="t">婆嚧吉帝</span><span class="py">pó lú jí dì</span></span></button>
+      <button type="button"><span class="n">79</span><span class="v"><span class="t">烁皤啰夜</span><span class="py">shuò pó là yè</span></span></button>
+      <button type="button"><span class="n">80</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
+      <button type="button"><span class="n">81</span><span class="v"><span class="t">唵·悉殿都</span><span class="py">ǎn · xī diàn dū</span></span></button>
+      <button type="button"><span class="n">82</span><span class="v"><span class="t">漫多啰</span><span class="py">màn duō là</span></span></button>
+      <button type="button"><span class="n">83</span><span class="v"><span class="t">跋陀耶</span><span class="py">bá tuó yē</span></span></button>
+      <button type="button"><span class="n">84</span><span class="v"><span class="t">娑婆诃</span><span class="py">suō pó hē</span></span></button>
     </div>
   </section>
 
@@ -438,6 +472,25 @@ const VERSES = [
   "南无喝啰怛那·哆啰夜耶","南无阿唎耶","婆嚧吉帝","烁皤啰夜","娑婆诃",
   "唵·悉殿都","漫多啰","跋陀耶","娑婆诃"
 ];
+const PINYIN = [
+  "ná mó · hē là dá nā · duō là yè yē","ná mó · ā lì yē","pó lú jié dì · shuò bō là yē","pú tí sà duǒ pó yē","mó hē sà duǒ pó yē",
+  "mó hē jiā lú ní jiā yē","ǎn","sà pó là fá yì","shù dá nā dá xiě","ná mó xī jí lì duǒ · yī méng ā lì yē",
+  "pó lú jí dì · shì fó là léng tuó pó","ná mó · nā là jǐn chí","xī lì mó hē pó duō shā miē","sà pó ā tā · dòu shū péng","ā shì yùn",
+  "sà pó sà duō · ná mó pó sà duō · ná mó pó qié","mó fá tè dòu","dá zhí tuō","ǎn · ā pó lú xī","lú jiā dì",
+  "jiā luó dì","yí xī lì","mó hē pú tí sà duǒ","sà pó sà pó","mó là mó là",
+  "mó xī mó xī · lì tuó yùn","jù lú jù lú · jié méng","dù lú dù lú · fá shé yē dì","mó hē fá shé yē dì","tuó là tuó là",
+  "dì lì ní","shì fó là yē","zhē là zhē là","mó mó fá mó là","mù dì lì",
+  "yī xī yī xī","shì nā shì nā","ā là shēn · fó là shě lì","fá shā fá shēn","fó là shě yē",
+  "hū lú hū lú mó là","hū lú hū lú xī lì","suō là suō là","xī lì xī lì","sū lú sū lú",
+  "pú tí yè · pú tí yè","pú tuó yè · pú tuó yè","mí dì lì yè","nā là jǐn chí","dì lì sè ní nā",
+  "pó yè mó nā","suō pó hē","xī tuó yè","suō pó hē","mó hē xī tuó yè",
+  "suō pó hē","xī tuó yù yì","shì pó là yē","suō pó hē","nā là jǐn chí",
+  "suō pó hē","mó là nā là","suō pó hē","xī là sēng · ā mù qié yē","suō pó hē",
+  "suō pó mó hē · ā xī tuó yè","suō pó hē","zhě jí là · ā xī tuó yè","suō pó hē","bō tuó mó · jié xī tuó yè",
+  "suō pó hē","nā là jǐn chí · pó qié là yē","suō pó hē","mó pó lì · shèng jié là yè","suō pó hē",
+  "ná mó hē là dá nā · duō là yè yē","ná mó ā lì yē","pó lú jí dì","shuò pó là yè","suō pó hē",
+  "ǎn · xī diàn dū","màn duō là","bá tuó yē","suō pó hē"
+];
 const N = VERSES.length; // 84
 const pad = i => String(i + 1).padStart(2, "0");
 const cn = i => {
@@ -456,7 +509,7 @@ for (let i = 0; i < N; i++) {
   const s = document.createElement("div");
   s.className = "slide";
   s.innerHTML = `<div class="loading">第${cn(i)}句 · 加载中…</div>`;
-  s.dataset.src = pad(i) + ".webp";
+  s.dataset.src = "/" + pad(i) + ".webp";
   track.appendChild(s);
 
   buttons[i].addEventListener("click", () => {
@@ -486,12 +539,14 @@ let idx = 0;
 const bar = document.getElementById("bar");
 const capNum = document.getElementById("capNum");
 const capVerse = document.getElementById("capVerse");
+const capPy = document.getElementById("capPy");
 
 function render() {
   track.style.transform = `translateX(${-idx * 100}%)`;
   bar.style.width = ((idx + 1) / N * 100) + "%";
   capNum.textContent = `第 ${idx + 1} 句 · 共 ${N} 句`;
   capVerse.textContent = VERSES[idx];
+  capPy.textContent = PINYIN[idx];
   for (let k = 0; k < N; k++) buttons[k].classList.toggle("active", k === idx);
   ensureLoaded(idx);
 }
@@ -542,6 +597,9 @@ viewport.addEventListener("pointerup", endDrag);
 viewport.addEventListener("pointercancel", endDrag);
 
 render();
+
+/* ---------- 离线支持 ---------- */
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");
 </script>
 </body>
 </html>
