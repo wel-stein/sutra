@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>生死册｜灵界志 · 通灵口述知识库</title>
-<meta name="description" content="生死册：记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。（口述：徐加晴）">
+<meta name="description" content="生死册：记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。曾慧芳接触生死簿的方式则相反——不是她去查，是有人把册子送到她床上，并要她「批」。（口述：徐加晴、曾慧芳）">
 <link rel="canonical" href="https://dabeixin.org/wiki/shengsice/">
 <link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/shengsice/">
 <link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/shengsice/">
@@ -16,13 +16,13 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="灵界志 · dabeixin.org">
 <meta property="og:title" content="生死册｜灵界志 · 通灵口述知识库">
-<meta property="og:description" content="生死册：记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。（口述：徐加晴）">
+<meta property="og:description" content="生死册：记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。曾慧芳接触生死簿的方式则相反——不是她去查，是有人把册子送到她床上，并要她「批」。（口述：徐加晴、曾慧芳）">
 <meta property="og:url" content="https://dabeixin.org/wiki/shengsice/">
 <meta property="og:image" content="https://dabeixin.org/og-image.jpg">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="生死册｜灵界志 · 通灵口述知识库">
-<meta name="twitter:description" content="生死册：记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。（口述：徐加晴）">
+<meta name="twitter:description" content="生死册：记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。曾慧芳接触生死簿的方式则相反——不是她去查，是有人把册子送到她床上，并要她「批」。（口述：徐加晴、曾慧芳）">
 <meta name="twitter:image" content="https://dabeixin.org/og-image.jpg">
 <script type="application/ld+json">
 {
@@ -32,7 +32,7 @@
   "alternateName": [
     "生死簿"
   ],
-  "description": "记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。",
+  "description": "记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。曾慧芳接触生死簿的方式则相反——不是她去查，是有人把册子送到她床上，并要她「批」。",
   "inDefinedTermSet": {
     "@type": "DefinedTermSet",
     "name": "灵界志 · 通灵口述知识库",
@@ -49,6 +49,15 @@
         "@type": "Person",
         "name": "徐加晴"
       }
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "生死簿｜预知大灾难｜心底话",
+      "url": "https://www.youtube.com/watch?v=CCsUun8rtt0",
+      "creator": {
+        "@type": "Person",
+        "name": "曾慧芳"
+      }
     }
   ]
 }
@@ -61,6 +70,8 @@
   --mist:#8fa9a6;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+/* 必须显式声明：.tile 等作者样式的 display 会盖过浏览器默认的 [hidden]{display:none} */
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{
   background:var(--bg);color:var(--text);
@@ -133,6 +144,15 @@ li{margin-bottom:6px;font-size:17px}
   font-size:13.5px;letter-spacing:.08em;color:var(--mist);background:var(--card2);
 }
 .chip.cat{color:var(--gold-dim)}
+.chip.multi{color:var(--bg);background:var(--mist);border-color:var(--mist)}
+
+/* ---- 多家说法标记 ---- */
+.multi-tag{
+  display:inline-block;vertical-align:middle;margin-left:10px;
+  border:1px solid var(--mist);border-radius:999px;padding:1px 10px;
+  font-size:13px;letter-spacing:.06em;color:var(--mist);
+}
+.tile .m{color:var(--mist);font-size:13px;letter-spacing:.06em;margin-top:5px}
 .alias{color:var(--text-dim);font-size:15px;letter-spacing:.05em;margin-bottom:14px}
 .lead{
   font-size:18px;color:var(--text);border-left:3px solid var(--gold-dim);
@@ -226,15 +246,15 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
   <section>
     <div class="card entry-head">
       <h1>生死册</h1>
-      <div class="chips"><span class="chip cat">彼岸地理</span><span class="chip">口述 · 徐加晴</span></div>
+      <div class="chips"><span class="chip cat">彼岸地理</span><span class="chip">口述 · 徐加晴</span><span class="chip">口述 · 曾慧芳</span><span class="chip multi">2 家说法</span></div>
       <div class="alias">又称：生死簿</div>
-      <div class="lead">记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。</div>
+      <div class="lead">记载生死的册籍。徐加晴自述可以前往查看，但立场明确：只能偷看，不可以拿、不可以改。念出先人姓名与生辰，名字便会浮现；望极都没有，就代表人还没死，要赶快回去。曾慧芳接触生死簿的方式则相反——不是她去查，是有人把册子送到她床上，并要她「批」。</div>
     </div>
   </section>
 
   <section>
     <div class="card">
-      <h2>口述内容</h2>
+      <h2>口述内容<span class="multi-tag">2 家说法并列 · 不作调和</span></h2>
 <div class="account">
   <div class="who">
     <span class="name"><a href="/wiki/xu-jiaqing/" style="color:inherit">徐加晴</a></span>
@@ -247,6 +267,19 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
 <blockquote>「只能偷看，不可以拿。」</blockquote>
   <div class="cite">出处：<a href="https://www.youtube.com/watch?v=aMt6deVPF10" target="_blank" rel="noopener">地府真面目曝光！通灵师徐加晴揭开另一维度</a><br>彤你装炷香 EP4 · YouTube 访谈 · 约 1 小时 7 分<br>主持：郭玥彤（Celia）<br>本站词条依该集完整字幕整理、分类，并转写为书面语，力求不改变原意；关键处以引文形式保留粤语原话。</div>
 </div>
+<div class="account">
+  <div class="who">
+    <span class="name"><a href="/wiki/zeng-huifang/" style="color:inherit">曾慧芳</a></span>
+    <span class="tag">搭桥梁的人 · 马来西亚 · 森美兰芙蓉</span>
+    <span class="tag">口述</span>
+  </div>
+  <p>2004 年那场灾难发生前一夜，她睡到一半，一叠很重的东西砸到床上，整张被子像被砸中。抬头看到一个穿官服的人把那叠东西放下，只说了一句「你自己看」。</p>
+<p>她起身一看全是名字，那人叫她「批」。她说自己完全不会，只能一边流眼泪一边做——所以她在灾难发生前就知道死了多少人。</p>
+<h3>册子上的细节</h3>
+<p>上面确实是人名；有些名字特别长，是因为外文名翻译过来会长一截。她说不是谁都能看，要有接触过这类事、拿到「许可」的人才看得到。</p>
+<p>她给生死簿的定义是：记载一个人生死与所有事的簿册。这次也是她第一次接触地府，此后又接触过很多次。</p>
+  <div class="cite">出处：<a href="https://www.youtube.com/watch?v=CCsUun8rtt0" target="_blank" rel="noopener">生死簿｜预知大灾难｜心底话</a><br>芳姐传 EP4《无字天书》 · YouTube 访谈 · 42 分<br>主持：灵王（探灵王频道）<br>字幕为粗略转录，不确定处沿用原整理稿的 (?) 标注。</div>
+</div>
     </div>
   </section>
 
@@ -257,6 +290,8 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
 <a class="tile" href="/wiki/difu/"><div class="t">地府</div><div class="d">彼岸地理</div></a>
 <a class="tile" href="/wiki/tianshu/"><div class="t">人生蓝图天书</div><div class="d">彼岸地理</div></a>
 <a class="tile" href="/wiki/heise-shizhe/"><div class="t">黑色使者</div><div class="d">灵体与存有</div></a>
+<a class="tile" href="/wiki/wuzi-tianshu/"><div class="t">无字天书</div><div class="d">法门与实践</div></a>
+<a class="tile" href="/wiki/case-2004/"><div class="t">个案：提前三个月的灾难预感</div><div class="d">案例记录</div></a>
     </div>
   </section>
 </div>

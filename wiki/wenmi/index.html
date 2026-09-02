@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>问米｜灵界志 · 通灵口述知识库</title>
-<meta name="description" content="问米：香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。（口述：徐加晴）">
+<meta name="description" content="问米：香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。曾慧芳同样划清界线，而且更进一步：她不只不问米，还坚决不让灵体上身。（口述：徐加晴、曾慧芳）">
 <link rel="canonical" href="https://dabeixin.org/wiki/wenmi/">
 <link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/wenmi/">
 <link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/wenmi/">
@@ -16,13 +16,13 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="灵界志 · dabeixin.org">
 <meta property="og:title" content="问米｜灵界志 · 通灵口述知识库">
-<meta property="og:description" content="问米：香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。（口述：徐加晴）">
+<meta property="og:description" content="问米：香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。曾慧芳同样划清界线，而且更进一步：她不只不问米，还坚决不让灵体上身。（口述：徐加晴、曾慧芳）">
 <meta property="og:url" content="https://dabeixin.org/wiki/wenmi/">
 <meta property="og:image" content="https://dabeixin.org/og-image.jpg">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="问米｜灵界志 · 通灵口述知识库">
-<meta name="twitter:description" content="问米：香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。（口述：徐加晴）">
+<meta name="twitter:description" content="问米：香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。曾慧芳同样划清界线，而且更进一步：她不只不问米，还坚决不让灵体上身。（口述：徐加晴、曾慧芳）">
 <meta name="twitter:image" content="https://dabeixin.org/og-image.jpg">
 <script type="application/ld+json">
 {
@@ -32,7 +32,7 @@
   "alternateName": [
     "问米婆"
   ],
-  "description": "香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。",
+  "description": "香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。曾慧芳同样划清界线，而且更进一步：她不只不问米，还坚决不让灵体上身。",
   "inDefinedTermSet": {
     "@type": "DefinedTermSet",
     "name": "灵界志 · 通灵口述知识库",
@@ -49,6 +49,15 @@
         "@type": "Person",
         "name": "徐加晴"
       }
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "第一次接触（惊悚人生）｜乱葬岗姐姐｜旗袍歌女｜49 天符水",
+      "url": "https://www.youtube.com/watch?v=4OnhpEr5Y54",
+      "creator": {
+        "@type": "Person",
+        "name": "曾慧芳"
+      }
     }
   ]
 }
@@ -61,6 +70,8 @@
   --mist:#8fa9a6;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+/* 必须显式声明：.tile 等作者样式的 display 会盖过浏览器默认的 [hidden]{display:none} */
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{
   background:var(--bg);color:var(--text);
@@ -133,6 +144,15 @@ li{margin-bottom:6px;font-size:17px}
   font-size:13.5px;letter-spacing:.08em;color:var(--mist);background:var(--card2);
 }
 .chip.cat{color:var(--gold-dim)}
+.chip.multi{color:var(--bg);background:var(--mist);border-color:var(--mist)}
+
+/* ---- 多家说法标记 ---- */
+.multi-tag{
+  display:inline-block;vertical-align:middle;margin-left:10px;
+  border:1px solid var(--mist);border-radius:999px;padding:1px 10px;
+  font-size:13px;letter-spacing:.06em;color:var(--mist);
+}
+.tile .m{color:var(--mist);font-size:13px;letter-spacing:.06em;margin-top:5px}
 .alias{color:var(--text-dim);font-size:15px;letter-spacing:.05em;margin-bottom:14px}
 .lead{
   font-size:18px;color:var(--text);border-left:3px solid var(--gold-dim);
@@ -226,15 +246,15 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
   <section>
     <div class="card entry-head">
       <h1>问米</h1>
-      <div class="chips"><span class="chip cat">因果与命理</span><span class="chip">口述 · 徐加晴</span></div>
+      <div class="chips"><span class="chip cat">因果与命理</span><span class="chip">口述 · 徐加晴</span><span class="chip">口述 · 曾慧芳</span><span class="chip multi">2 家说法</span></div>
       <div class="alias">又称：问米婆</div>
-      <div class="lead">香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。</div>
+      <div class="lead">香港民间通灵的一种，让亡者上身借口说话。徐加晴明确表示自己不是问米——她是「看」，不是「借口」。她同时描述了问米者在地府的行程：持香走过长桥，到对岸唤先人出来。曾慧芳同样划清界线，而且更进一步：她不只不问米，还坚决不让灵体上身。</div>
     </div>
   </section>
 
   <section>
     <div class="card">
-      <h2>口述内容</h2>
+      <h2>口述内容<span class="multi-tag">2 家说法并列 · 不作调和</span></h2>
 <div class="account">
   <div class="who">
     <span class="name"><a href="/wiki/xu-jiaqing/" style="color:inherit">徐加晴</a></span>
@@ -245,6 +265,17 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
 <p>至于问米的实际路线，她的描述是：问米婆拿着香走过黑海上的长桥，到对岸叫人把先人接出来；途中跌落河就回不了头。</p>
   <div class="cite">出处：<a href="https://www.youtube.com/watch?v=aMt6deVPF10" target="_blank" rel="noopener">地府真面目曝光！通灵师徐加晴揭开另一维度</a><br>彤你装炷香 EP4 · YouTube 访谈 · 约 1 小时 7 分<br>主持：郭玥彤（Celia）<br>本站词条依该集完整字幕整理、分类，并转写为书面语，力求不改变原意；关键处以引文形式保留粤语原话。</div>
 </div>
+<div class="account">
+  <div class="who">
+    <span class="name"><a href="/wiki/zeng-huifang/" style="color:inherit">曾慧芳</a></span>
+    <span class="tag">搭桥梁的人 · 马来西亚 · 森美兰芙蓉</span>
+    <span class="tag">口述</span>
+  </div>
+  <p>她说自己没拜过师，不是乩童，不敢称师傅——她做的事是「搭桥梁」：替过世的人向家属传话。</p>
+<p>与问米、乩童路线最大的分歧在上身：别的乩童主张先让灵体上身、再问它要什么；她坚决不让上，理由是上身像「一阵气」，上过一次就留了一口气，这只走了另一只还能进来，从此没完没了。</p>
+<p>她与灵体的沟通靠意识而不是借口说话——不管对方生前讲什么语言，到她这里都变成她听得懂的意思。</p>
+  <div class="cite">出处：<a href="https://www.youtube.com/watch?v=4OnhpEr5Y54" target="_blank" rel="noopener">第一次接触（惊悚人生）｜乱葬岗姐姐｜旗袍歌女｜49 天符水</a><br>芳姐传 EP1《从她的童年开始》 · YouTube 访谈 · 1 小时 17 分<br>主持：灵王（探灵王频道）<br>《芳姐传》系列共 10 集，本站只收录有字幕的 6 集；第 6、7（含花絮）、8、9 集频道未提供字幕，内容不明，本站不作推测。字幕为粗略转录，粤语、马来西亚华语与英文夹杂，原整理稿对不确定的人名地名以 (?) 标注，本站沿用。</div>
+</div>
     </div>
   </section>
 
@@ -254,6 +285,9 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
 <a class="tile" href="/wiki/difu-changqiao/"><div class="t">黑海与长桥</div><div class="d">彼岸地理</div></a>
 <a class="tile" href="/wiki/lingti/"><div class="t">灵体</div><div class="d">灵体与存有</div></a>
 <a class="tile" href="/wiki/tongling-fengong/"><div class="t">通灵者的分工</div><div class="d">因果与命理</div></a>
+<a class="tile" href="/wiki/dajianqiao/"><div class="t">搭桥梁</div><div class="d">通灵者之道</div></a>
+<a class="tile" href="/wiki/bu-rang-shangshen/"><div class="t">不让上身</div><div class="d">法门与实践</div></a>
+<a class="tile" href="/wiki/yishi-goutong/"><div class="t">意识沟通</div><div class="d">法门与实践</div></a>
     </div>
   </section>
 </div>
