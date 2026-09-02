@@ -49,6 +49,8 @@
   --mist:#8fa9a6;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+/* 必須顯式聲明：.tile 等作者樣式的 display 會蓋過瀏覽器默認的 [hidden]{display:none} */
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{
   background:var(--bg);color:var(--text);
@@ -121,6 +123,15 @@ li{margin-bottom:6px;font-size:17px}
   font-size:13.5px;letter-spacing:.08em;color:var(--mist);background:var(--card2);
 }
 .chip.cat{color:var(--gold-dim)}
+.chip.multi{color:var(--bg);background:var(--mist);border-color:var(--mist)}
+
+/* ---- 多家說法標記 ---- */
+.multi-tag{
+  display:inline-block;vertical-align:middle;margin-left:10px;
+  border:1px solid var(--mist);border-radius:999px;padding:1px 10px;
+  font-size:13px;letter-spacing:.06em;color:var(--mist);
+}
+.tile .m{color:var(--mist);font-size:13px;letter-spacing:.06em;margin-top:5px}
 .alias{color:var(--text-dim);font-size:15px;letter-spacing:.05em;margin-bottom:14px}
 .lead{
   font-size:18px;color:var(--text);border-left:3px solid var(--gold-dim);
@@ -269,7 +280,7 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
 <a class="tile" href="/tc/wiki/zijin-lingti/"><div class="t">自盡的靈體</div><div class="d">徐加晴口述中最無從處理的一類靈體。她說自盡者任何法科都送不走，必須留在原地，直到本來的陽…</div></a>
 <a class="tile" href="/tc/wiki/shuyao/"><div class="t">樹妖精怪</div><div class="d">非人類靈體的統稱。徐加晴隔空看相片時，第一步就是分辨畫面裡的是普通靈體，還是樹妖精怪——…</div></a>
 <a class="tile" href="/tc/wiki/heise-shizhe/"><div class="t">黑色使者</div><div class="d">徐加晴口述中的死亡預兆：人（或動物）將死之前約一個月，身邊會出現黑色使者。老人家臨終前說…</div></a>
-<a class="tile" href="/tc/wiki/niutou-mamian/"><div class="t">牛頭馬面（地神）</div><div class="d">徐加晴口述中負責接引靈魂的地神。自盡者留在原地等到原本陽壽終結時，前來接走的就是他們。…</div></a>
+<a class="tile" href="/tc/wiki/niutou-mamian/"><div class="t">牛頭馬面（地神）</div><div class="d">徐加晴口述中負責接引靈魂的地神。自盡者留在原地等到原本陽壽終結時，前來接走的就是他們。曾…</div></a>
 <a class="tile" href="/tc/wiki/taisui-jiangjun/"><div class="t">太歲與將軍</div><div class="d">徐加晴每年上天庭辦事時求見的對象。她自述要逐一向各位將軍討取「扎文」，再抄寫下來交給信眾…</div></a>
 <a class="tile" href="/tc/wiki/yanluowang/"><div class="t">閻羅王與城隍</div><div class="d">掌管生死冊那個空間的主事者。徐加晴形容為「一位很大的黑色閻羅王」，並說自己懷疑有時候其實…</div></a>
 </div></div><div class="catblock"><div class="cathead">法門與實踐<span>9 條</span></div><div class="grid">

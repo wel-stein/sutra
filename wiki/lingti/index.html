@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>灵体｜灵界志 · 通灵口述知识库</title>
-<meta name="description" content="灵体：徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。（口述：徐加晴）">
+<meta name="description" content="灵体：徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。曾慧芳的态度更直接：每间屋都有灵体，很正常；而她「根本就当了他们是人」。（口述：徐加晴、曾慧芳）">
 <link rel="canonical" href="https://dabeixin.org/wiki/lingti/">
 <link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/lingti/">
 <link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/lingti/">
@@ -16,13 +16,13 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="灵界志 · dabeixin.org">
 <meta property="og:title" content="灵体｜灵界志 · 通灵口述知识库">
-<meta property="og:description" content="灵体：徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。（口述：徐加晴）">
+<meta property="og:description" content="灵体：徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。曾慧芳的态度更直接：每间屋都有灵体，很正常；而她「根本就当了他们是人」。（口述：徐加晴、曾慧芳）">
 <meta property="og:url" content="https://dabeixin.org/wiki/lingti/">
 <meta property="og:image" content="https://dabeixin.org/og-image.jpg">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="灵体｜灵界志 · 通灵口述知识库">
-<meta name="twitter:description" content="灵体：徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。（口述：徐加晴）">
+<meta name="twitter:description" content="灵体：徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。曾慧芳的态度更直接：每间屋都有灵体，很正常；而她「根本就当了他们是人」。（口述：徐加晴、曾慧芳）">
 <meta name="twitter:image" content="https://dabeixin.org/og-image.jpg">
 <script type="application/ld+json">
 {
@@ -33,7 +33,7 @@
     "灵魂",
     "鬼魂"
   ],
-  "description": "徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。",
+  "description": "徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。曾慧芳的态度更直接：每间屋都有灵体，很正常；而她「根本就当了他们是人」。",
   "inDefinedTermSet": {
     "@type": "DefinedTermSet",
     "name": "灵界志 · 通灵口述知识库",
@@ -50,6 +50,15 @@
         "@type": "Person",
         "name": "徐加晴"
       }
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "地府找妈妈｜元神出窍｜屋灵｜山神找上门｜白虎山｜竹鼠精｜牛头马面",
+      "url": "https://www.youtube.com/watch?v=6EyAAxzege4",
+      "creator": {
+        "@type": "Person",
+        "name": "曾慧芳"
+      }
     }
   ]
 }
@@ -62,6 +71,8 @@
   --mist:#8fa9a6;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+/* 必须显式声明：.tile 等作者样式的 display 会盖过浏览器默认的 [hidden]{display:none} */
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{
   background:var(--bg);color:var(--text);
@@ -134,6 +145,15 @@ li{margin-bottom:6px;font-size:17px}
   font-size:13.5px;letter-spacing:.08em;color:var(--mist);background:var(--card2);
 }
 .chip.cat{color:var(--gold-dim)}
+.chip.multi{color:var(--bg);background:var(--mist);border-color:var(--mist)}
+
+/* ---- 多家说法标记 ---- */
+.multi-tag{
+  display:inline-block;vertical-align:middle;margin-left:10px;
+  border:1px solid var(--mist);border-radius:999px;padding:1px 10px;
+  font-size:13px;letter-spacing:.06em;color:var(--mist);
+}
+.tile .m{color:var(--mist);font-size:13px;letter-spacing:.06em;margin-top:5px}
 .alias{color:var(--text-dim);font-size:15px;letter-spacing:.05em;margin-bottom:14px}
 .lead{
   font-size:18px;color:var(--text);border-left:3px solid var(--gold-dim);
@@ -227,15 +247,15 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
   <section>
     <div class="card entry-head">
       <h1>灵体</h1>
-      <div class="chips"><span class="chip cat">灵体与存有</span><span class="chip">口述 · 徐加晴</span></div>
+      <div class="chips"><span class="chip cat">灵体与存有</span><span class="chip">口述 · 徐加晴</span><span class="chip">口述 · 曾慧芳</span><span class="chip multi">2 家说法</span></div>
       <div class="alias">又称：灵魂、鬼魂</div>
-      <div class="lead">徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。</div>
+      <div class="lead">徐加晴工作的主要对象。她不以问米的方式让灵体上身，而是「看」：看灵魂的颜色、气息，看它有没有遗憾执念，看它有没有去到该去的地方。曾慧芳的态度更直接：每间屋都有灵体，很正常；而她「根本就当了他们是人」。</div>
     </div>
   </section>
 
   <section>
     <div class="card">
-      <h2>口述内容</h2>
+      <h2>口述内容<span class="multi-tag">2 家说法并列 · 不作调和</span></h2>
 <div class="account">
   <div class="who">
     <span class="name"><a href="/wiki/xu-jiaqing/" style="color:inherit">徐加晴</a></span>
@@ -246,6 +266,19 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
 <p>处理时她不用任何法器，只用「念」把灵体带走，速度极快。要送去哪里，则取决于对方生前的宗教。</p>
 <p>并非所有见到的东西都是人的灵魂——对着相片看不清楚时，她会先分辨那是普通灵体，还是树妖精怪。</p>
   <div class="cite">出处：<a href="https://www.youtube.com/watch?v=aMt6deVPF10" target="_blank" rel="noopener">地府真面目曝光！通灵师徐加晴揭开另一维度</a><br>彤你装炷香 EP4 · YouTube 访谈 · 约 1 小时 7 分<br>主持：郭玥彤（Celia）<br>本站词条依该集完整字幕整理、分类，并转写为书面语，力求不改变原意；关键处以引文形式保留粤语原话。</div>
+</div>
+<div class="account">
+  <div class="who">
+    <span class="name"><a href="/wiki/zeng-huifang/" style="color:inherit">曾慧芳</a></span>
+    <span class="tag">搭桥梁的人 · 马来西亚 · 森美兰芙蓉</span>
+    <span class="tag">口述</span>
+  </div>
+  <p>被问到是不是每一间屋都有灵体，她直说：有。他们跟人一样，每间屋都有，很正常；有人觉得自家很干净，其实只是没看见而已。</p>
+<p>她不主张驱赶，也不认为安神位挡得住——真正的神心胸广阔，对人对灵一律赦免，不会去惩罚谁。她自己的态度是：家里真有的话，她就不理它。</p>
+<h3>把他们当人</h3>
+<p>她说自己跟很多灵体做过朋友，坐车时会自言自语。跟他们相处反而舒服，因为「起码他们不会骗人」。</p>
+<p>她最大的困扰不是害怕，是分不出人和灵：晚上开车看到路上有人她会闪，因为不知道那是人还是灵。</p>
+  <div class="cite">出处：<a href="https://www.youtube.com/watch?v=6EyAAxzege4" target="_blank" rel="noopener">地府找妈妈｜元神出窍｜屋灵｜山神找上门｜白虎山｜竹鼠精｜牛头马面</a><br>芳姐传 EP2《通灵路上》 · YouTube 访谈 · 1 小时 27 分<br>主持：灵王（探灵王频道）<br>字幕为粗略转录，不确定处沿用原整理稿的 (?) 标注。</div>
 </div>
     </div>
   </section>
@@ -258,6 +291,10 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
 <a class="tile" href="/wiki/gekong-bianling/"><div class="t">隔空辨灵</div><div class="d">法门与实践</div></a>
 <a class="tile" href="/wiki/shuyao/"><div class="t">树妖精怪</div><div class="d">灵体与存有</div></a>
 <a class="tile" href="/wiki/zijin-lingti/"><div class="t">自尽的灵体</div><div class="d">灵体与存有</div></a>
+<a class="tile" href="/wiki/dizhu/"><div class="t">地主（屋灵）</div><div class="d">灵体与存有</div></a>
+<a class="tile" href="/wiki/renbigui/"><div class="t">人比鬼恐怖</div><div class="d">因果与命理</div></a>
+<a class="tile" href="/wiki/bu-rang-shangshen/"><div class="t">不让上身</div><div class="d">法门与实践</div></a>
+<a class="tile" href="/wiki/jing/"><div class="t">精（山精与动物精）</div><div class="d">灵体与存有</div></a>
     </div>
   </section>
 </div>

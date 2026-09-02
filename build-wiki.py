@@ -25,7 +25,7 @@ DATA = os.path.join(ROOT, "data")
 
 WIKI_NAME = "灵界志"
 WIKI_SUB = "通灵口述知识库"
-CATEGORY_ORDER = ["彼岸地理", "灵体与存有", "法门与实践", "因果与命理", "案例记录"]
+CATEGORY_ORDER = ["彼岸地理", "灵体与存有", "法门与实践", "因果与命理", "通灵者之道", "案例记录"]
 
 # ---------------------------------------------------------------- 读取数据
 
@@ -79,6 +79,25 @@ def plain(s):
 def entries_of(medium_slug):
     return [e for e in ENTRIES if any(a["medium"] == medium_slug for a in e["accounts"])]
 
+def speakers(entry):
+    return [MEDIUMS[a["medium"]]["name"] for a in entry["accounts"]]
+
+def search_key(entry):
+    """索引页搜索用的关键词：标题、别称、说话人（含其别名，如「芳姐」）、摘要。"""
+    names = []
+    for a in entry["accounts"]:
+        m = MEDIUMS[a["medium"]]
+        names += [m["name"], *m.get("aliases", [])]
+    return " ".join([entry["title"], *entry.get("aliases", []),
+                     *dict.fromkeys(names), entry["lead"]])
+
+def multi_note(entry):
+    """列表卡片上的「多家说法」标记；只有一家时不显示。"""
+    names = speakers(entry)
+    if len(names) < 2:
+        return ""
+    return f'<div class="m">◆ {len(names)} 家说法：{esc("、".join(names))}</div>'
+
 def by_category(entries):
     out = []
     for cat in CATEGORY_ORDER:
@@ -97,6 +116,8 @@ CSS = """
   --mist:#8fa9a6;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+/* 必须显式声明：.tile 等作者样式的 display 会盖过浏览器默认的 [hidden]{display:none} */
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{
   background:var(--bg);color:var(--text);
@@ -169,6 +190,15 @@ li{margin-bottom:6px;font-size:17px}
   font-size:13.5px;letter-spacing:.08em;color:var(--mist);background:var(--card2);
 }
 .chip.cat{color:var(--gold-dim)}
+.chip.multi{color:var(--bg);background:var(--mist);border-color:var(--mist)}
+
+/* ---- 多家说法标记 ---- */
+.multi-tag{
+  display:inline-block;vertical-align:middle;margin-left:10px;
+  border:1px solid var(--mist);border-radius:999px;padding:1px 10px;
+  font-size:13px;letter-spacing:.06em;color:var(--mist);
+}
+.tile .m{color:var(--mist);font-size:13px;letter-spacing:.06em;margin-top:5px}
 .alias{color:var(--text-dim);font-size:15px;letter-spacing:.05em;margin-bottom:14px}
 .lead{
   font-size:18px;color:var(--text);border-left:3px solid var(--gold-dim);
@@ -375,9 +405,15 @@ def build_entry(entry, lang):
     speakers = "、".join(sorted({MEDIUMS[a["medium"]]["name"] for a in entry["accounts"]}))
     title = f"{entry['title']}｜{WIKI_NAME} · {WIKI_SUB}"
 
+    n_acc = len(entry["accounts"])
     chips = [f'<span class="chip cat">{esc(entry["category"])}</span>']
     chips += [f'<span class="chip">口述 · {esc(MEDIUMS[a["medium"]]["name"])}</span>'
               for a in entry["accounts"]]
+    if n_acc > 1:
+        chips.append(f'<span class="chip multi">{n_acc} 家说法</span>')
+    heading = "口述内容"
+    if n_acc > 1:
+        heading += f'<span class="multi-tag">{n_acc} 家说法并列 · 不作调和</span>'
     alias = ""
     if entry.get("aliases"):
         alias = f'<div class="alias">又称：{esc("、".join(entry["aliases"]))}</div>'
@@ -413,7 +449,7 @@ def build_entry(entry, lang):
 
   <section>
     <div class="card">
-      <h2>口述内容</h2>
+      <h2>{heading}</h2>
 {accounts}
     </div>
   </section>
@@ -554,9 +590,9 @@ def build_index(lang):
     blocks = []
     for cat, group in by_category(ENTRIES):
         tiles = "\n".join(
-            f'<a class="tile" data-k="{esc(e["title"] + " " + " ".join(e.get("aliases", [])) + " " + e["lead"])}" '
+            f'<a class="tile" data-k="{esc(search_key(e))}" '
             f'href="{p}/wiki/{e["slug"]}/"><div class="t">{esc(e["title"])}</div>'
-            f'<div class="d">{esc(plain(e["lead"])[:46])}…</div></a>'
+            f'<div class="d">{esc(plain(e["lead"])[:46])}…</div>{multi_note(e)}</a>'
             for e in group
         )
         blocks.append(
@@ -571,7 +607,8 @@ def build_index(lang):
     <div class="notice">
       <b>体例说明</b>　本站收录通灵者本人对另一维度的口述，逐条注明<b>是谁说的</b>、<b>在哪里说的</b>。
       各家说法未必一致，本站不作调和、不作裁断，也不代表本站认同其内容为事实。
-      日后若有其他通灵者对同一词条给出不同说法，会并列收录于同一页，以便对读。
+      多位通灵者谈过同一件事的，一律并列收录于同一页供对读，列表上以
+      <b>◆</b> 标出——地府、生死册、牛头马面这几条，正是各家说法出入最大的地方。
     </div>
   </section>
 

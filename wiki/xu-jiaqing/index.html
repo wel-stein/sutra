@@ -49,6 +49,8 @@
   --mist:#8fa9a6;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+/* 必须显式声明：.tile 等作者样式的 display 会盖过浏览器默认的 [hidden]{display:none} */
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{
   background:var(--bg);color:var(--text);
@@ -121,6 +123,15 @@ li{margin-bottom:6px;font-size:17px}
   font-size:13.5px;letter-spacing:.08em;color:var(--mist);background:var(--card2);
 }
 .chip.cat{color:var(--gold-dim)}
+.chip.multi{color:var(--bg);background:var(--mist);border-color:var(--mist)}
+
+/* ---- 多家说法标记 ---- */
+.multi-tag{
+  display:inline-block;vertical-align:middle;margin-left:10px;
+  border:1px solid var(--mist);border-radius:999px;padding:1px 10px;
+  font-size:13px;letter-spacing:.06em;color:var(--mist);
+}
+.tile .m{color:var(--mist);font-size:13px;letter-spacing:.06em;margin-top:5px}
 .alias{color:var(--text-dim);font-size:15px;letter-spacing:.05em;margin-bottom:14px}
 .lead{
   font-size:18px;color:var(--text);border-left:3px solid var(--gold-dim);
@@ -269,7 +280,7 @@ footer .credit{margin-top:10px;font-size:13px;letter-spacing:.04em;opacity:.85;l
 <a class="tile" href="/wiki/zijin-lingti/"><div class="t">自尽的灵体</div><div class="d">徐加晴口述中最无从处理的一类灵体。她说自尽者任何法科都送不走，必须留在原地，直到本来的阳…</div></a>
 <a class="tile" href="/wiki/shuyao/"><div class="t">树妖精怪</div><div class="d">非人类灵体的统称。徐加晴隔空看相片时，第一步就是分辨画面里的是普通灵体，还是树妖精怪——…</div></a>
 <a class="tile" href="/wiki/heise-shizhe/"><div class="t">黑色使者</div><div class="d">徐加晴口述中的死亡预兆：人（或动物）将死之前约一个月，身边会出现黑色使者。老人家临终前说…</div></a>
-<a class="tile" href="/wiki/niutou-mamian/"><div class="t">牛头马面（地神）</div><div class="d">徐加晴口述中负责接引灵魂的地神。自尽者留在原地等到原本阳寿终结时，前来接走的就是他们。…</div></a>
+<a class="tile" href="/wiki/niutou-mamian/"><div class="t">牛头马面（地神）</div><div class="d">徐加晴口述中负责接引灵魂的地神。自尽者留在原地等到原本阳寿终结时，前来接走的就是他们。曾…</div></a>
 <a class="tile" href="/wiki/taisui-jiangjun/"><div class="t">太岁与将军</div><div class="d">徐加晴每年上天庭办事时求见的对象。她自述要逐一向各位将军讨取「扎文」，再抄写下来交给信众…</div></a>
 <a class="tile" href="/wiki/yanluowang/"><div class="t">阎罗王与城隍</div><div class="d">掌管生死册那个空间的主事者。徐加晴形容为「一位很大的黑色阎罗王」，并说自己怀疑有时候其实…</div></a>
 </div></div><div class="catblock"><div class="cathead">法门与实践<span>9 条</span></div><div class="grid">
