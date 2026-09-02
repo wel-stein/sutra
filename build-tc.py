@@ -18,6 +18,7 @@ patches = [
      '"@id": "https://dabeixin.org/tc/#webpage",\n      "url": "https://dabeixin.org/tc/",'),
     ('"inLanguage": "zh-CN"', '"inLanguage": "zh-Hant"'),
     ('<a class="lang-switch" href="/tc/">繁體</a>', '<a class="lang-switch" href="/">简体</a>'),
+    ('<a class="wiki-link" href="/wiki/">', '<a class="wiki-link" href="/tc/wiki/">'),
 ]
 for old, new in patches:
     assert old in out, f"patch source missing: {old[:60]}"

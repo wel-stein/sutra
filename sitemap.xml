@@ -98,4 +98,426 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/"/>
   </url>
+  <!-- wiki:start -->
+  <url>
+    <loc>https://dabeixin.org/wiki/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/xu-jiaqing/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/xu-jiaqing/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/xu-jiaqing/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/xu-jiaqing/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/xu-jiaqing/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/xu-jiaqing/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/difu/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/difu/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/difu/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/difu/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/difu/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/difu/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/difu-changqiao/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/difu-changqiao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/difu-changqiao/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/difu-changqiao/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/difu-changqiao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/difu-changqiao/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/difu-huochezhan/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/difu-huochezhan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/difu-huochezhan/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/difu-huochezhan/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/difu-huochezhan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/difu-huochezhan/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/difu-louceng/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/difu-louceng/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/difu-louceng/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/difu-louceng/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/difu-louceng/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/difu-louceng/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/mengpotang/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/mengpotang/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/mengpotang/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/mengpotang/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/mengpotang/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/mengpotang/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/shengsice/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/shengsice/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/shengsice/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/shengsice/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/shengsice/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/shengsice/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/tianting/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/tianting/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/tianting/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/tianting/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/tianting/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/tianting/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/tianshu/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/tianshu/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/tianshu/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/tianshu/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/tianshu/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/tianshu/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/songling-men/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/songling-men/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/songling-men/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/songling-men/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/songling-men/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/songling-men/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/lingti/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/lingti/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/lingti/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/lingti/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/lingti/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/lingti/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/zijin-lingti/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/zijin-lingti/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/zijin-lingti/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/zijin-lingti/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/zijin-lingti/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/zijin-lingti/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/shuyao/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/shuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/shuyao/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/shuyao/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/shuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/shuyao/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/heise-shizhe/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/heise-shizhe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/heise-shizhe/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/heise-shizhe/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/heise-shizhe/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/heise-shizhe/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/niutou-mamian/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/niutou-mamian/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/niutou-mamian/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/niutou-mamian/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/niutou-mamian/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/niutou-mamian/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/taisui-jiangjun/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/taisui-jiangjun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/taisui-jiangjun/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/taisui-jiangjun/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/taisui-jiangjun/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/taisui-jiangjun/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/yanluowang/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/yanluowang/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/yanluowang/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/yanluowang/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/yanluowang/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/yanluowang/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/songling/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/songling/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/songling/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/songling/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/songling/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/songling/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/gekong-bianling/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/gekong-bianling/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/gekong-bianling/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/gekong-bianling/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/gekong-bianling/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/gekong-bianling/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/chuqiao-kanfengshui/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/chuqiao-kanfengshui/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/chuqiao-kanfengshui/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/chuqiao-kanfengshui/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/chuqiao-kanfengshui/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/chuqiao-kanfengshui/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/bai-taisui/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/bai-taisui/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/bai-taisui/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/bai-taisui/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/bai-taisui/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/bai-taisui/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/zhawen/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/zhawen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/zhawen/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/zhawen/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/zhawen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/zhawen/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/zhaijie/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/zhaijie/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/zhaijie/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/zhaijie/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/zhaijie/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/zhaijie/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/jingshu/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/jingshu/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/jingshu/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/jingshu/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/jingshu/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/jingshu/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/qixing/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/qixing/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/qixing/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/qixing/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/qixing/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/qixing/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/zhendong-faqi/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/zhendong-faqi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/zhendong-faqi/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/zhendong-faqi/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/zhendong-faqi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/zhendong-faqi/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/yinguo-zhouqi/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/yinguo-zhouqi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/yinguo-zhouqi/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/yinguo-zhouqi/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/yinguo-zhouqi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/yinguo-zhouqi/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/keti/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/keti/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/keti/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/keti/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/keti/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/keti/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/gaiming/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/gaiming/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/gaiming/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/gaiming/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/gaiming/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/gaiming/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/tongling-fengong/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/tongling-fengong/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/tongling-fengong/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/tongling-fengong/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/tongling-fengong/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/tongling-fengong/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/wenmi/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/wenmi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/wenmi/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/wenmi/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/wenmi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/wenmi/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/case-laorenyuan/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-laorenyuan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-laorenyuan/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/case-laorenyuan/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-laorenyuan/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-laorenyuan/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/case-qigai-wangzi/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-qigai-wangzi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-qigai-wangzi/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/case-qigai-wangzi/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-qigai-wangzi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-qigai-wangzi/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/case-jinpu/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-jinpu/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-jinpu/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/case-jinpu/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-jinpu/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-jinpu/"/>
+  </url>
+  <!-- wiki:end -->
 </urlset>

@@ -1,0 +1,125 @@
+# 灵界志 · 资料层说明
+
+`wiki/` 与 `tc/wiki/` 下的所有页面都是生成物，**不要手改**。
+唯一的事实来源是本目录下的三个 JSON，改完跑一次生成器即可：
+
+```bash
+pip install opencc-python-reimplemented   # 只需一次
+python3 build-wiki.py
+```
+
+生成器会重建 `wiki/`（简体）与 `tc/wiki/`（繁体，s2tw 自动转换），
+并把所有 URL 写回 `sitemap.xml` 里 `<!-- wiki:start -->` / `<!-- wiki:end -->` 之间。
+数据有问题（slug 重复、交叉引用指空、出处不存在）会直接报错，不会生成半成品。
+
+---
+
+## 三个文件的分工
+
+| 文件 | 存什么 | 键 |
+| --- | --- | --- |
+| `sources.json` | 一次访谈／一条影片／一本书 | 出处 id，如 `tnzzx-ep4` |
+| `mediums.json` | 一位通灵者的档案与自述 | 通灵者 slug，如 `xu-jiaqing` |
+| `entries.json` | 词条（数组，顺序不影响呈现） | 每项的 `slug` 字段 |
+
+**slug 用拼音小写、以连字号分隔**，且词条与通灵者不可撞名（生成器会检查）——
+两者共用 `/wiki/<slug>/` 这一层命名空间。
+
+---
+
+## 收录一位新通灵者的流程
+
+### 1. 先登记出处 `sources.json`
+
+```json
+"xxx-ep1": {
+  "title": "影片或文章标题",
+  "program": "节目名 EP1",
+  "host": "主持人",
+  "guest": "medium-slug",
+  "type": "YouTube 访谈",
+  "lang": "粤语",
+  "length": "约 1 小时",
+  "url": "https://...",
+  "note": "整理方式说明，会显示在每条引用下方"
+}
+```
+
+`title` / `url` 必填，其余可省略。
+
+### 2. 建立人物档案 `mediums.json`
+
+```json
+"medium-slug": {
+  "name": "姓名",
+  "title": "身份（如：通灵歌手）",
+  "region": "活跃地区",
+  "aliases": [],
+  "lead": "一段导言：他是谁、能力路数、本站收了他哪一类内容",
+  "profile": [{ "k": "身份", "v": "…" }],
+  "blocks": [ … ],
+  "sources": ["xxx-ep1"]
+}
+```
+
+`profile` 是页面上那张档案表，`k` 建议控制在四个字以内。
+
+### 3. 写词条 `entries.json`
+
+```json
+{
+  "slug": "term-slug",
+  "title": "词条名",
+  "aliases": ["别称"],
+  "category": "彼岸地理",
+  "lead": "一句话定义。写成中性描述，注明是谁的说法。",
+  "accounts": [
+    {
+      "medium": "medium-slug",
+      "source": "xxx-ep1",
+      "blocks": [ … ]
+    }
+  ],
+  "see": ["other-slug"]
+}
+```
+
+`category` 只能是这五个之一（要新增就改 `build-wiki.py` 的 `CATEGORY_ORDER`）：
+
+    彼岸地理 · 灵体与存有 · 法门与实践 · 因果与命理 · 案例记录
+
+### 4. `blocks` 的四种内容块
+
+```json
+{ "t": "p",     "v": "一段正文" }
+{ "t": "h",     "v": "小标题" }
+{ "t": "ul",    "v": ["条目一", "条目二"] }
+{ "t": "quote", "v": "原话（会自动加上引号）" }
+```
+
+---
+
+## 同一词条收录多家说法
+
+这是本站的重点：**不要为第二位通灵者另开一条词条**，
+而是往同一条的 `accounts` 数组里追加一项。
+
+```json
+"accounts": [
+  { "medium": "xu-jiaqing", "source": "tnzzx-ep4", "blocks": [ … ] },
+  { "medium": "another",    "source": "yyy-ep2",   "blocks": [ … ] }
+]
+```
+
+页面会按顺序并列呈现，各自挂各自的出处，读者自行对读。
+说法互相矛盾时照录不误——本站不作调和、不作裁断。
+
+---
+
+## 写作体例
+
+- **归属清楚**：正文一律写「她说」「他自述」，不要写成「地府分为若干楼层」这种断言句。
+- **`lead` 是中性摘要**：给搜索结果和列表用，同样要点明是谁的说法。
+- **原话谨慎引用**：粤语原话用 `quote` 块短引即可，不要整段誊录字幕。
+- **只记不评**：不替说法找科学解释，也不嘲讽，判断留给读者。
+- **不确定就标注**：说话人自己存疑的地方（例如「怀疑是玉皇大帝」）要照实保留。

@@ -1,6 +1,6 @@
 /* 大悲咒 · 八十四相 — 离线支持 */
-const CACHE = "dbx-v1";
-const CORE = ["/", "/tc/", "/favicon.svg", "/manifest.json"];
+const CACHE = "dbx-v2";
+const CORE = ["/", "/tc/", "/wiki/", "/tc/wiki/", "/favicon.svg", "/manifest.json"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
