@@ -1,3 +1,8 @@
 # 原始大图不参与部署（网站实际使用同名 .webp，og 分享图为 og-image.jpg）
 [0-9][0-9].png
 [0-9][0-9].jpg
+
+# 构建脚本不参与部署（wiki/ 与 tc/ 下的页面由它们生成后一并提交）
+build-tc.py
+build-wiki.py
+data/README.md

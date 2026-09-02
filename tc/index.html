@@ -101,6 +101,19 @@
     transition: color .2s, border-color .2s;
   }
   .lang-switch:hover { color: var(--gold); border-color: var(--gold-dim); }
+  .wiki-link {
+    position: absolute;
+    top: 16px; left: 16px;
+    color: var(--gold-dim);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 13px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: color .2s, border-color .2s;
+  }
+  .wiki-link:hover { color: var(--gold); border-color: var(--gold-dim); }
   header .lotus { font-size: 30px; color: var(--gold); letter-spacing: 8px; }
   header h1 {
     font-size: clamp(30px, 6vw, 44px);
@@ -314,6 +327,7 @@
 <body>
 
 <header>
+  <a class="wiki-link" href="/tc/wiki/">靈界志 →</a>
   <a class="lang-switch" href="/">简体</a>
   <div class="lotus">☸</div>
   <h1>大悲咒 · 八十四相</h1>
