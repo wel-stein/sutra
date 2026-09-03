@@ -1059,5 +1059,29 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-hailun/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-hailun/"/>
   </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/chongwu-tongling/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/chongwu-tongling/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/chongwu-tongling/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/chongwu-tongling/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/chongwu-tongling/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/chongwu-tongling/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/wiki/case-longzhudao/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-longzhudao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-longzhudao/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/wiki/case-longzhudao/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/wiki/case-longzhudao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/wiki/case-longzhudao/"/>
+  </url>
   <!-- wiki:end -->
 </urlset>

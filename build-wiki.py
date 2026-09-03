@@ -224,6 +224,15 @@ blockquote{
 }
 .cite a{word-break:break-all}
 
+/* ---- 资料级别提示（非逐字记录的出处） ---- */
+.caveat{
+  border:1px dashed var(--gold-dim);border-radius:8px;
+  padding:10px 15px;margin-bottom:16px;
+  color:var(--gold-dim);font-size:14.5px;line-height:1.7;
+}
+.caveat b{color:var(--gold)}
+.chip.weak{color:var(--gold-dim);border-style:dashed}
+
 /* ---- 档案表 ---- */
 .profile{width:100%;border-collapse:collapse;margin-bottom:4px}
 .profile th,.profile td{
@@ -369,6 +378,11 @@ def render_blocks(blocks):
             raise SystemExit(f"未知内容块类型：{t}")
     return "\n".join(out)
 
+def render_caveat(src_id):
+    """出处若非逐字记录，在口述内容之前先声明资料级别。"""
+    c = SOURCES[src_id].get("caveat")
+    return f'<div class="caveat"><b>资料级别</b>　{esc(c)}</div>' if c else ""
+
 def render_cite(src_id):
     s = SOURCES[src_id]
     parts = [f'出处：<a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["title"])}</a>']
@@ -393,6 +407,7 @@ def render_account(acc, lang, show_link=True):
     <span class="tag">{esc(m["title"])} · {esc(m["region"])}</span>
     <span class="tag">口述</span>
   </div>
+  {render_caveat(acc["source"])}
   {render_blocks(acc["blocks"])}
   {render_cite(acc["source"])}
 </div>"""
@@ -411,6 +426,8 @@ def build_entry(entry, lang):
               for a in entry["accounts"]]
     if n_acc > 1:
         chips.append(f'<span class="chip multi">{n_acc} 家说法</span>')
+    if all(SOURCES[a["source"]].get("caveat") for a in entry["accounts"]):
+        chips.append('<span class="chip weak">非逐字记录</span>')
     heading = "口述内容"
     if n_acc > 1:
         heading += f'<span class="multi-tag">{n_acc} 家说法并列 · 不作调和</span>'
