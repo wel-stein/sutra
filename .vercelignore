@@ -5,4 +5,8 @@
 # 构建脚本不参与部署（wiki/ 与 tc/ 下的页面由它们生成后一并提交）
 build-tc.py
 build-wiki.py
+
+# 仓库文档不参与部署
 data/README.md
+CLAUDE.md
+HANDOFF.md
