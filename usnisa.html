@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>佛頂尊勝陀羅尼</title>
+<style>
+  :root {
+    --bg: #1d1410;
+    --card: #2a201a;
+    --card2: #241b15;
+    --gold: #c9a25e;
+    --gold-dim: #8f7344;
+    --text: #efe6d8;
+    --text-dim: #b3a693;
+    --line: #3d2f24;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Noto Serif TC","Noto Serif SC","Source Han Serif TC","STKaiti","KaiTi","DFKai-SB","STSong","SimSun",serif;
+    line-height: 1.8;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  a { color: var(--gold); }
+
+  /* ---------- 頁眉 ---------- */
+  .topnav {
+    max-width: 860px; margin: 0 auto; padding: 14px 16px 0;
+    font-size: 14px; letter-spacing: .1em;
+  }
+  .topnav a { color: var(--text-dim); text-decoration: none; }
+  .topnav a:hover { color: var(--gold); }
+  header {
+    text-align: center;
+    padding: 30px 16px 28px;
+    background:
+      radial-gradient(ellipse 70% 100% at 50% 0%, #34261c 0%, transparent 70%);
+  }
+  header .lotus { font-size: 30px; color: var(--gold); letter-spacing: 8px; }
+  header h1 {
+    font-size: clamp(30px, 6vw, 44px);
+    letter-spacing: .18em;
+    color: var(--gold);
+    font-weight: 600;
+    margin: 10px 0 6px;
+  }
+  header .sub {
+    color: var(--text-dim);
+    font-size: 15px;
+    letter-spacing: .35em;
+  }
+  .divider {
+    display: flex; align-items: center; justify-content: center;
+    gap: 14px; margin: 22px auto 0; color: var(--gold-dim);
+  }
+  .divider::before, .divider::after {
+    content: ""; height: 1px; width: min(120px, 22vw);
+    background: linear-gradient(90deg, transparent, var(--gold-dim));
+  }
+  .divider::after { background: linear-gradient(270deg, transparent, var(--gold-dim)); }
+
+  section { padding: 26px 0; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 26px 28px;
+  }
+  h2 {
+    color: var(--gold);
+    font-size: 22px;
+    letter-spacing: .25em;
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .intro p {
+    text-indent: 2em;
+    margin-bottom: 12px;
+    font-size: 16.5px;
+  }
+  .intro p:last-child { margin-bottom: 0; }
+  .intro b { color: var(--gold); font-weight: 600; }
+
+  /* ---------- 聖像 ---------- */
+  .icon {
+    background: var(--card2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 12px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .icon img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 6px;
+    box-shadow: 0 6px 26px rgba(0,0,0,.45);
+    display: inline-block;
+  }
+  .icon .caption {
+    margin-top: 16px;
+    padding: 14px 12px 18px;
+    border-top: 1px solid var(--line);
+    background: var(--card);
+    margin-left: -12px; margin-right: -12px;
+  }
+  .caption .name {
+    color: var(--gold);
+    font-size: clamp(19px, 4vw, 24px);
+    letter-spacing: .14em;
+    font-weight: 600;
+  }
+  .caption .desc {
+    color: var(--text-dim);
+    font-size: 14px;
+    letter-spacing: .06em;
+    margin-top: 4px;
+  }
+
+  /* ---------- 陀羅尼 ---------- */
+  .note {
+    text-align: center; color: var(--text-dim);
+    font-size: 14px; margin-bottom: 18px; letter-spacing: .08em;
+  }
+  .dharani {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 8px;
+  }
+  .dharani li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    background: var(--card2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 9px 14px;
+    font-size: 17px;
+    letter-spacing: .06em;
+  }
+  .dharani .n {
+    color: var(--gold-dim);
+    font-size: 12.5px;
+    min-width: 2.2em;
+    flex: none;
+  }
+  .dharani small { color: var(--text-dim); font-size: 13px; }
+  .dharani li.end { grid-column: 1 / -1; justify-content: center; }
+  .dharani li.end .t { color: var(--gold); }
+
+  .source {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 13.5px;
+    margin-top: 16px;
+    letter-spacing: .06em;
+  }
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 13px;
+    padding: 30px 16px 46px;
+    letter-spacing: .15em;
+  }
+  @media (max-width: 520px) {
+    .card { padding: 22px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topnav"><a href="index.html">‹ 大悲咒 · 八十四相</a></nav>
+
+<header>
+  <div class="lotus">☸</div>
+  <h1>佛頂尊勝陀羅尼</h1>
+  <div class="sub">唐 罽賓沙門 佛陀波利 奉詔譯</div>
+  <div class="divider">❖</div>
+</header>
+
+<div class="wrap">
+
+  <!-- 聖像 -->
+  <section>
+    <figure class="icon">
+      <img src="usnisa.png" alt="佛頂尊勝佛母像：三面八臂，趺坐蓮臺">
+      <figcaption class="caption">
+        <div class="name">佛頂尊勝佛母</div>
+        <div class="desc">三面八臂 · 趺坐蓮臺 · 手持佛像、金剛杵、弓箭、羂索、甘露寶瓶</div>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- 簡介 -->
+  <section>
+    <div class="card intro">
+      <h2>何為尊勝咒</h2>
+      <p><b>佛頂尊勝陀羅尼</b>，出自《佛頂尊勝陀羅尼經》，為佛於舍衛國祇樹給孤獨園所說。經中稱此咒能<b>淨除一切惡道</b>，破一切地獄、畜生、閻羅王界之苦，故又名「淨除一切惡道佛頂尊勝陀羅尼」。</p>
+      <p>經緣起於三十三天的<b>善住天子</b>。善住夜聞空中聲言：「七日命終，當受七返畜生身，後墮地獄，出而為人亦貧賤盲目。」善住驚怖，往求帝釋。帝釋入定觀之，知無可救，乃持香花詣佛。佛從頂上放光，為說此陀羅尼。善住依法受持六日六夜，一切惡道等苦即得解脫，增壽無量。</p>
+      <p>經中說：若人聞此陀羅尼一經於耳，先世一切地獄惡業悉皆消滅；若能書寫、讀誦、供養，或將此咒安於幢上、高山、樓上，其影映身、塵沾衣者，亦不墮惡道。臨命終時憶念此咒，還得增壽，身口意淨。</p>
+    </div>
+  </section>
+
+  <!-- 傳譯 -->
+  <section>
+    <div class="card intro">
+      <h2>傳譯因緣</h2>
+      <p>據志靜法師所述經序：唐儀鳳元年，罽賓沙門<b>佛陀波利</b>遠來五臺山禮文殊菩薩，遇一老人告之：「漢地眾生多造罪業，唯此經能滅惡業，師何不將來？」佛陀波利遂返西國取經。</p>
+      <p>永淳二年，佛陀波利攜梵本回到長安。大帝命日照三藏與杜行顗等共譯，譯本留於宮內，梵本還僧。佛陀波利再與西明寺<b>順貞</b>法師共譯，即今所傳此本。譯畢，佛陀波利持梵本入五臺山，不復出。</p>
+    </div>
+  </section>
+
+  <!-- 陀羅尼全文 -->
+  <section>
+    <h2>陀羅尼全文</h2>
+    <div class="note">依《永樂北藏》本分句 · 小字音注從略</div>
+    <ol class="dharani" id="dharani"></ol>
+    <div class="source">
+      經文出處：<a href="http://sutrapearls.org/toc-C/P-sutra/P-sutra2/P046/P046n0345_001.pdf" target="_blank" rel="noopener">永樂北藏 第四六冊 No.0345《佛頂尊勝陀羅尼經》</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>南無佛頂尊勝佛母 ❖ 願以此功德 · 普及於一切</footer>
+
+<script>
+const LINES = [
+  "那謨薄伽跋帝",
+  "啼隷路迦鉢囉底毘失瑟吒耶勃陀耶",
+  "薄伽跋底",
+  "怛姪他",
+  "唵",
+  "毘輸馱耶娑摩三漫多皤婆娑",
+  "娑破囉拏揭底伽訶那",
+  "娑婆皤輸秫地阿鼻詵者蘇揭多伐折那",
+  "阿嚧嘌多毘曬雞",
+  "阿訶囉阿訶囉",
+  "阿瑜散陀囉尼",
+  "輸馱耶輸馱耶",
+  "伽伽那毘秫提",
+  "烏瑟尼沙毘逝耶秫提",
+  "娑訶娑囉喝囉濕弭珊珠地帝",
+  "薩婆怛他揭多地瑟咤那頞地瑟恥帝慕姪隷",
+  "跋折囉迦耶僧訶多那秫提",
+  "薩婆伐囉拏毘秫提",
+  "鉢囉底你伐怛耶阿瑜秫提",
+  "薩末那阿地瑟恥帝",
+  "末禰末禰",
+  "怛闥多部多俱胝鉢唎秫提",
+  "毘薩普吒勃地秫提",
+  "社耶社耶",
+  "毘社耶毘社耶",
+  "薩末囉薩末囉勃陀頞地瑟恥多秫提",
+  "跋折梨跋折囉揭鞞",
+  "跋折濫婆伐都",
+  "麼麼<small>（受持者於此自稱名）</small>薩婆薩埵寫迦耶毘秫提",
+  "薩婆揭底鉢唎秫提",
+  "薩婆怛他揭多三摩濕婆娑遏地瑟恥帝",
+  "勃陀勃陀蒱馱耶蒱馱耶三漫多鉢唎秫提",
+  "薩婆怛他揭多地瑟咤那頞地瑟恥帝"
+];
+const list = document.getElementById("dharani");
+LINES.forEach((t, i) => {
+  const li = document.createElement("li");
+  li.innerHTML = `<span class="n">${String(i + 1).padStart(2, "0")}</span><span class="t">${t}</span>`;
+  list.appendChild(li);
+});
+const end = document.createElement("li");
+end.className = "end";
+end.innerHTML = `<span class="t">娑婆訶</span>`;
+list.appendChild(end);
+</script>
+</body>
+</html>
