@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/usnisa.html", "destination": "/usnisa/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)\\.(webp|png|jpg|jpeg)",

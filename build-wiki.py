@@ -344,7 +344,7 @@ def header(lang, current):
     p = "/tc" if tc else ""
     other = current if tc else "/tc" + current   # 语言切换指向同一页的另一版本
     return f"""<div class="top">
-  <a class="home" href="{p}/">← 大悲咒</a>
+  <a class="home" href="{p}/">← 首页</a>
   <a class="lang-switch" href="{other}">{'简体' if tc else '繁體'}</a>
   <div class="mark">☰</div>
   <h1>{WIKI_NAME}</h1>
@@ -355,7 +355,7 @@ def header(lang, current):
 
 def crumb(lang, trail):
     p = "/tc" if lang == "tc" else ""
-    bits = [f'<a href="{p}/">大悲咒</a>', f'<a href="{p}/wiki/">{WIKI_NAME}</a>']
+    bits = [f'<a href="{p}/">首页</a>', f'<a href="{p}/wiki/">{WIKI_NAME}</a>']
     bits += [esc(t) for t in trail]
     return '<div class="wrap"><div class="crumb">' + '<i>›</i>'.join(bits) + "</div></div>\n"
 

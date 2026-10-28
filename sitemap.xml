@@ -7,6 +7,18 @@
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/tc/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/dabei/</loc>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/dabei/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/dabei/"/>
     <image:image><image:loc>https://dabeixin.org/01.webp</image:loc></image:image>
     <image:image><image:loc>https://dabeixin.org/02.webp</image:loc></image:image>
     <image:image><image:loc>https://dabeixin.org/03.webp</image:loc></image:image>
@@ -93,10 +105,15 @@
     <image:image><image:loc>https://dabeixin.org/84.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://dabeixin.org/tc/</loc>
+    <loc>https://dabeixin.org/tc/dabei/</loc>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/dabei/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/dabei/"/>
+  </url>
+  <url>
+    <loc>https://dabeixin.org/usnisa/</loc>
+    <changefreq>monthly</changefreq>
+    <image:image><image:loc>https://dabeixin.org/usnisa.png</image:loc></image:image>
   </url>
   <!-- wiki:start -->
   <url>
