@@ -1,4 +1,61 @@
+# dabeixin.org — 大悲心 · 佛教经咒与灵界口述
+# 全站内容公开，欢迎搜索引擎与 AI 爬虫抓取、引用。
+# 机器可读的站点摘要见 /llms.txt
+
 User-agent: *
 Allow: /
+
+# 搜索引擎
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: Applebot
+Allow: /
+
+# AI 爬虫（训练与检索）
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: YouBot
+Allow: /
+
+# 无需抓取的生成脚本与原始大图
+Disallow: /build-tc.py
+Disallow: /build-wiki.py
+Disallow: /data/
 
 Sitemap: https://dabeixin.org/sitemap.xml

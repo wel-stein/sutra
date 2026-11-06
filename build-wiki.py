@@ -134,7 +134,7 @@ a:hover{color:var(--gold)}
   background:radial-gradient(ellipse 70% 100% at 50% 0%,#34261c 0%,transparent 70%);
 }
 .top .mark{font-size:27px;color:var(--gold);letter-spacing:8px}
-.top h1{
+.top h1,.top .site{
   font-size:clamp(27px,5.4vw,39px);letter-spacing:.2em;color:var(--gold);
   font-weight:600;margin:8px 0 6px;
 }
@@ -347,7 +347,7 @@ def header(lang, current):
   <a class="home" href="{p}/">← 首页</a>
   <a class="lang-switch" href="{other}">{'简体' if tc else '繁體'}</a>
   <div class="mark">☰</div>
-  <h1>{WIKI_NAME}</h1>
+  {"<h1>" if current == "index" else '<div class="site">'}{WIKI_NAME}{"</h1>" if current == "index" else "</div>"}
   <div class="sub">{WIKI_SUB}</div>
   <div class="divider">❖</div>
 </div>

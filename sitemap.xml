@@ -4,18 +4,21 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://dabeixin.org/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/"/>
   </url>
   <url>
     <loc>https://dabeixin.org/tc/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/"/>
   </url>
   <url>
     <loc>https://dabeixin.org/dabei/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/dabei/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/dabei/"/>
@@ -106,12 +109,14 @@
   </url>
   <url>
     <loc>https://dabeixin.org/tc/dabei/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://dabeixin.org/dabei/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://dabeixin.org/tc/dabei/"/>
   </url>
   <url>
     <loc>https://dabeixin.org/usnisa/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <image:image><image:loc>https://dabeixin.org/usnisa.png</image:loc></image:image>
   </url>
